@@ -2,9 +2,6 @@ document.getElementById("golden").style.display="none";
 
 function prize(){
     current = parseInt(document.getElementById("score").innerHTML)
-    if(current <= 0){
-        document.getElementById("prz").innerHTML = "Please take a ball and roll it on the track!"
-    }
     if (current >= 1 && current <= 6){
         document.getElementById("prz").innerHTML = "Small prize!"
     }

@@ -13,9 +13,5 @@ function reset(){
 }
 
 function resetcfm(){
-    document.getElementById("rst").style.display="block";
-    document.getElementById("rstcfm").style.display="none";
-    document.getElementById("golden").style.display="none";
-    document.getElementById("score").innerHTML = 0
-    prize()
+    window.location.reload()
 }
