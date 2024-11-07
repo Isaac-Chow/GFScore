@@ -2,6 +2,9 @@ document.getElementById("golden").style.display="none";
 
 function prize(){
     current = parseInt(document.getElementById("score").innerHTML)
+    if(current <= 0){
+        document.getElementById("prz").innerHTML = "Please take a ball and roll it on the track!"
+    }
     if (current >= 1 && current <= 6){
         document.getElementById("prz").innerHTML = "Small prize!"
     }
@@ -16,9 +19,6 @@ function prize(){
         document.getElementById("prz").innerHTML = "Wow! You got 20 points! You'll get 5 extra balls, try aiming for the golden hole now! If you get 3 or more into the golden hole, you'll get the jumbo prize. If you don't, you'll still get a large prize."
         document.getElementById("golden").style.display="block";
     } 
-    if(current <= 0){
-        document.getElementById("prz").innerHTML = "Please take a ball and roll it on the track!"
-    }
 
 }
 
