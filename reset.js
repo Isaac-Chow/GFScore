@@ -17,4 +17,5 @@ function resetcfm(){
     document.getElementById("rstcfm").style.display="none";
     document.getElementById("score").innerHTML = 0
     document.getElementById("golden").style.display="none";
+    document.getElementById("prz").innerHTML = "Please take a ball and roll it on the track!"
 }
