@@ -1,6 +1,7 @@
 document.getElementById("golden").style.display="none";
 
 function prize(){
+    document.getElementById("pri").style.display="none";
     current = parseInt(document.getElementById("score").innerHTML)
     if (current >= 1 && current <= 6){
         document.getElementById("prz").innerHTML = "Small prize!"
@@ -41,7 +42,7 @@ function gld(){
     if(current >=20){
         ins = prompt("Here is 5 extra balls, wish you the best of luck!     How many did you get in?")
         if(ins >=3){
-            document.getElementById("prz").innerHTML = "Congragulations!!! You'll be getting a JUMBO prize!!! Please claim your prize towards your right!"
+            document.getElementById("prz").innerHTML = "congratulations!!! You'll be getting a JUMBO prize!!! Please claim your prize towards your right!"
         } else {
             document.getElementById("prz").innerHTML = "Congrats! You'll be getting a large prize! Please claim your prize towards your right!"
         }
